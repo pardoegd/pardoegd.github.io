@@ -186,7 +186,7 @@ div.content {
     display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -196,7 +196,7 @@ div.content {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
