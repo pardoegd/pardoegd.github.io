@@ -1,0 +1,71 @@
+.page {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.mainlogo {
+    display:block;
+    margin: auto;
+    padding: 10px;
+}
+
+.navcontainer{
+    padding: 25px 0;
+    position: -webkit-sticky;
+}
+
+.content{
+    margin: 10px auto 100px
+    
+}
+
+.stickycontainer{
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.navbar{
+      background-color: #333;
+}
+
+.button{
+    
+}
+
+.activebutton{
+    background-color: #4CAF50;
+  color: white;
+}
+
+.dropdownbutton{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbutton .dropdownbutton{
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
