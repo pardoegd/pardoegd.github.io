@@ -1,14 +1,15 @@
-$(document).ready(function()) {
-    $(".menu-icon").on("click", function(){
-    $("nav ul").toggleClass("showing");
-        });
-    });
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-        $('nav').addClass('black');
-    }
-    else {
-        $('nav').removeClass('black');
-    }
-    })
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
