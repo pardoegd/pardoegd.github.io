@@ -4,12 +4,12 @@
       });
 
       $("ul li").click(function() {
-            $("ul ul").slideUp();
+            $("ul ul").slideDown();
             $(this).find('ul').slideToggle();
       });
 
       $(window).resize(function() {
-            if($(window).width() > 768) {
+            if($(window).width() > 768) {s
                   $("ul").removeAttr('style');
             }
       });

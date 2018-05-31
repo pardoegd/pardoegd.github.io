@@ -12,8 +12,11 @@ ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      background: #e3e3e3;
+      background: rgba(0, 0, 0, 0);
       position: relative;
+      overflow: hidden;
+      color: #fff;
+      /*transition: 1s;*/
 }
 
 ul li {
@@ -21,7 +24,7 @@ ul li {
 }
 
 ul li a {
-      color: #292929;
+      color: #fff;
       text-decoration: none;
       padding: 15px;
       display: block;
@@ -54,8 +57,8 @@ ul li i {
 }
 
 nav div {
-      background: lightgrey;
-      color: #292929;
+      background: black;
+      color: white;
       font-size: 24px;
       padding: 0.6em;
       cursor: pointer;
@@ -71,7 +74,7 @@ nav div {
       ul {
             display: none;
             position: static;
-            background: #e3e3e3;
+            background: black;
       }
 
       ul li {
