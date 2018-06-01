@@ -14,8 +14,9 @@ ul {
       list-style-type: none;
       background: #286DA8;
       position: relative;
-      overflow: hidden;
-      color: #fff;
+      text-align: center;
+      /*overflow: hidden;
+      color: #fff;*/
       /*transition: 1s;*/
 }
 
@@ -46,7 +47,7 @@ ul ul li {
 }
 
 ul li:hover ul {
-      display: block;
+      display:block;
 }
 
 ul li i {
@@ -62,6 +63,7 @@ nav div {
       padding: 0.6em;
       cursor: pointer;
       display: none;
+      text-align: center;
 }
 
 
