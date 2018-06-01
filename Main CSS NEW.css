@@ -12,7 +12,7 @@ ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      background: rgba(0, 0, 0, 0);
+      background: #286DA8;
       position: relative;
       overflow: hidden;
       color: #fff;
@@ -40,10 +40,9 @@ ul ul {
       background: lightgrey;
       display: none;
 }
-
 ul ul li {
       display: block;
-      background: #e3e3e3;
+      background: #286DA8;
 }
 
 ul li:hover ul {
@@ -51,13 +50,13 @@ ul li:hover ul {
 }
 
 ul li i {
-      color: #292929;
+      color: #fff;
       float: right;
       padding-left: 20px;
 }
 
 nav div {
-      background: black;
+      background: #286DA8;
       color: white;
       font-size: 24px;
       padding: 0.6em;
@@ -74,7 +73,7 @@ nav div {
       ul {
             display: none;
             position: static;
-            background: black;
+            background: #286DA8;
       }
 
       ul li {
@@ -83,7 +82,7 @@ nav div {
 
       ul ul {
             position: static;
-            background: #e3e3e3;
+            background: #286DA8;
       }
 
 }
@@ -91,7 +90,7 @@ nav div {
 section.sec1 {
     width: 100%;
     height:  100vh;
-    background: url("Level Design Screenshots/Forest River Scene/Forest River Screenshot 01.png");
+    background: url("Main Page Images/Website Header Image.jpg");
     background background-size: cover;
     background-position: center;
 }
@@ -104,8 +103,8 @@ section.sec1 {
     width: 900px;
     margin: 30px auto;
     text-align: justify;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 10px;
 }
 
 .centre {

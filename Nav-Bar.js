@@ -9,7 +9,7 @@
       });
 
       $(window).resize(function() {
-            if($(window).width() > 768) {s
+            if($(window).width() > 1000) {s
                   $("ul").removeAttr('style');
             }
       });
