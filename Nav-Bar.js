@@ -4,7 +4,7 @@
       });
 
       $("ul li").click(function() {
-            $("ul ul").slideUp();
+        //    $("ul ul").slideUp();
             $(this).find('ul').slideToggle();
       });
 
