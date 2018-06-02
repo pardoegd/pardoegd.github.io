@@ -72,7 +72,7 @@ nav div {
 }
 
 
-@media(max-width: 65em){
+@media(max-width: 70em){
       nav div {
             display: block;
       }
