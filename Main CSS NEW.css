@@ -27,6 +27,7 @@ ul li {
 
 ul li a {
       color: #fff;
+      font-size: 14px;
       text-decoration: none;
       padding: 15px;
       display: block;
@@ -100,6 +101,7 @@ nav div {
         width: 100%;
         text-align: justify;
         font-size: 15px;
+        text-align: center;
       }
     section.content iframe{
         width: 380px;
@@ -110,7 +112,6 @@ nav div {
         margin-left: 1em;
         margin-right: 1em;
     }
-
 }
 
 section.sec1 {
@@ -131,6 +132,7 @@ section.sec1 {
     width: 100%;
     text-align: justify;
     font-size: 18px;
+    text-align: center;
 }
 
 .content header{
@@ -140,7 +142,7 @@ section.sec1 {
     font-weight: bold;
 }
 
-.content header2{
+.content subtitle{
     width: 100%;
     text-align: center;
     font-size: 22px;
@@ -148,8 +150,9 @@ section.sec1 {
 }
 
 .content iframe {
-    width: 560px;
-    height: 315px;
+    width: 888px;
+    height: 480px;
+    align-items: center;
 }
 
 .centre {
@@ -161,6 +164,62 @@ section.sec1 {
 .instapost{
     margin-left: 2em;
     margin-right: 2em;
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    background-color: #286DA8;
+}
+    
+.footer image{
+    width: 250px;
+    height: 150px;
+}
+
+.footer fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.footer fa:hover {
+    opacity: 0.7;
+}
+
+.footer fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.footer fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.footer fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.footer fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.footer fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.footer fa-flickr {
+  background: #f40083;
+  color: white;
 }
 
 /*CSS FOR IMAGE GALLERIES*/
