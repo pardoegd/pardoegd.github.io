@@ -169,156 +169,160 @@ section.sec1 {
 .footer{
     width:100%;
     text-align: center;
+    font-size: 30px;
     bottom: 0;
     left: 0;
     background-color: #286DA8;
 }
+
+.footer p {
+    margin-top: 50px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
     
-.footer image{
-    width: 250px;
+.footer img{
+    width: 230px;
     height: 150px;
+    padding: 10px;
 }
 
-.footer fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+.footer header{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.footer fa:hover {
+.fa:hover {
     opacity: 0.7;
 }
 
-.footer fa-facebook {
+#facebook {
   background: #3B5998;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.footer fa-twitter {
+#twitter {
   background: #55ACEE;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.footer fa-linkedin {
+#linkedin {
   background: #007bb5;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.footer fa-youtube {
+#youtube {
   background: #bb0000;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.footer fa-instagram {
+#instagram {
   background: #125688;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.footer fa-flickr {
+#flickr {
   background: #f40083;
   color: white;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
 /*CSS FOR IMAGE GALLERIES*/
 
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-  position:relative;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
+/* Slideshow container */
+section.slideshow-container {
+  max-width: 700px;
   position: relative;
-  background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
 }
 
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
+/* Hide the images by default */
+section.mySlides {
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+section.prev, section.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
+  margin-top: -22px;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
-.next {
+section.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+section.prev:hover, section.next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+section.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+section.numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -326,31 +330,36 @@ section.sec1 {
   top: 0;
 }
 
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
+/* The dots/bullets/indicators */
+section.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-img.demo {
-  width: 220px;
-  height: 124px;
-  opacity: 0.6;
+section.active, section.dot:hover {
+  background-color: #717171;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+/* Fading animation */
+section.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-img.hover-shadow {
-  width: 220px;
-  height: 124px;
-  transition: 0.3s
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
