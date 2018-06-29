@@ -11,7 +11,7 @@
     
       <meta name="author" content="Daniel Pardoe">
     
-      <title>Pardoe Games Designs Main Sites - Home</title>
+      <title>Pardoe Games Designs Main Sites - Abandoned TARDIS</title>
       
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +20,24 @@
       <link rel="stylesheet" href="Main CSS NEW.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="responsiveslides.min.js"></script>
   </head>
+    
 
     <body>
     
-       <nav>
+        <nav>
             <div>
                 <i class="fa fa-bars"></i>
             </div>
             
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#" id="slide1">Unity Level Designs <i class="fa fa-sort-desc"></i></a>
+            <ul id="Main">
+                <li><a href="index.html" id="MainList">Home</a></li>
+                <li><a href="#" id="Slide1" id="MainList">Unity Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="ULD01 - Abandoned TARDIS.html">Abandoned TARDIS</a></li>
                         <li><a href="ULD02 - Abandoned Stargate.html">Abandoned Stargate</a></li>
@@ -44,25 +49,25 @@
                         <li><a href="ULD08 - Summer Beach.html">Summer Beach</a></li>
                     </ul>
                 </li>
-                <li><a href="#" id="slide2">Unreal Level Designs <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide2">Unreal Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="">COMING SOON!!</a></li>
                     </ul>
                 </li>
-                <li><a href="#" id="slide3">Cryengine Level Designs <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide3">Cryengine Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="">COMING SOON!!</a></li>
                     </ul>
                 </li>
-                <li><a href="#" id="slide4">Other Random Projects <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide3" class="active">Other Random Projects <i class="fa fa-sort-desc"></i></a>
                     <ul>
-                        <li><a href="ORP01 - Planet Protector.html">Planet Protector(XNA)</a></li>
+                        <li><a href="ORP01 - Planet Protector.html" class="active">Planet Protector(XNA)</a></li>
                         <li><a href="ORP02 - Abandoned House.html">Abandoned House (3DS Max)</a></li>
                         <li><a href="ORP03 - LEGO Mindstorm.html">LEGO Mindstorm Robots</a></li>
                         <li><a href="ORP04 - Quiz Game.html">C++ Quiz Game</a></li>
                     </ul>
                 </li>
-                <li><a href="About Me Page.html">About Me</a></li>
+                <li><a href="About Me Page.html" id="MainList">About Me</a></li>
             </ul>
         </nav>
         <script type="text/javascript" src="Nav-Bar.js"></script>
@@ -71,26 +76,22 @@
         
         <section class="content">
             
+
             <header>
-                Pardoe Game Design Portfolio Site COMING VERY SOON!!
+                Planet Protector (XNA)
             </header>
             <p>
-                This is a Prototype Home Page for Pardoe Games Designs!!
-            </p>
-            <p>
-                This is a site that will be used to shown my Level/Scene Designs that I will be making using the Unity Engine and possibly at a later date the Unreal Engine and even Cryengine. This is something that will be updated along side my YouTube, Flickr, Instagram and even Facebook Page. So please stand by as there will be a lot of awesome and exciting content coming soon to all of these platforms. This site will also be a place where the level design screenshots will be hosted, with links to the 4K original shots off my Flickr page which can be downloaded in the original size and format. To get information about me go the about me page, it will also include links to all of my social media pages, where you can follow me and get updates as soon as I upload content.
+                This game was made using Visual Studio 2015, C# and XNA, it was made as part as my first year of my course, Level 3 Extended Diploma in IT, since I enrolled on the Software Design and Development side of this course. This was the final project towards Unit 16 Procedural Programming, however, I did use OOP to create this game. The overall aim of the game is to stop the asteroids from hitting the Earth, or the bottom of the screen, this is done by the ship shooting lasers at the asteroids. However, if you get hit by the asteroid the ship will loose some health, let the health go down to zero and your ship will be no more and you would have lost the game. Hitting the Asteroids gives you more of a score value or XP, so you can take it in turns to compete with your friends. However, I do have to say the game can be quite glitchy to play and is not as good as it could have been, for example, the collisions can sometimes not be detected correctly or even not detected at all, meaning it can appear that either the Asteroid or the Laser missed each other, or if the Asteroid missed the ship.
             </p>
             <header>
-                Latest YouTube Video!!
+            YouTube Video Showcase
             </header>
-            <p>
-                Below is the latest Level Design Showcase Video, this was a combination of all of the seperate Levels/Scenes that I made using the Unity Engine in the later half of 2017. These were created using a mixture of 3D Studio Max for the model creation and Unity 2017 Personal for the overall game creation. The assets that were not made by me came from the Unity Asset Store and the textures mostly came from a mixture of Textures.com, Pinterest, Arroway-Textures and Dev-Assets.
-            </p>
-            <p align="centre">
-            <iframe src="https://www.youtube.com/embed/AVGiNmU5VhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </p>
-        
-        </section>
+            <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/UEfyVGDq5fw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            </section>
+            </section>
         <section class="footer">
             <p align="centre">
              <img src="Main Page Images/My Logo NEW (Web Ver).png" alt="Pardoe Games Designs Logo">

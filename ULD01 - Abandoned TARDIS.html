@@ -11,7 +11,7 @@
     
       <meta name="author" content="Daniel Pardoe">
     
-      <title>Pardoe Games Designs Main Sites - Home</title>
+      <title>Pardoe Games Designs Main Sites - Abandoned TARDIS</title>
       
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,10 @@
       <link rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="responsiveslides.min.js"></script>
   </head>
+    
 
     <body>
     
@@ -32,9 +35,9 @@
                 <i class="fa fa-bars"></i>
             </div>
             
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="" id="slide1" class="active">Unity Level Designs <i class="fa fa-sort-desc"></i></a>
+            <ul id="Main">
+                <li><a href="index.html" id="MainList">Home</a></li>
+                <li><a href="#" id="Slide1" class="active" id="MainList">Unity Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="ULD01 - Abandoned TARDIS.html" class="active">Abandoned TARDIS</a></li>
                         <li><a href="ULD02 - Abandoned Stargate.html">Abandoned Stargate</a></li>
@@ -46,17 +49,17 @@
                         <li><a href="ULD08 - Summer Beach.html">Summer Beach</a></li>
                     </ul>
                 </li>
-                <li><a href="" id="slide2">Unreal Level Designs <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide2">Unreal Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="">COMING SOON!!</a></li>
                     </ul>
                 </li>
-                <li><a href="" id="slide3">Cryengine Level Designs <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide3">Cryengine Level Designs <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="">COMING SOON!!</a></li>
                     </ul>
                 </li>
-                <li><a href="" id="slide4">Other Random Projects <i class="fa fa-sort-desc"></i></a>
+                <li><a href="#" id="Slide3">Other Random Projects <i class="fa fa-sort-desc"></i></a>
                     <ul>
                         <li><a href="ORP01 - Planet Protector.html">Planet Protector(XNA)</a></li>
                         <li><a href="ORP02 - Abandoned House.html">Abandoned House (3DS Max)</a></li>
@@ -64,7 +67,7 @@
                         <li><a href="ORP04 - Quiz Game.html">C++ Quiz Game</a></li>
                     </ul>
                 </li>
-                <li><a href="About Me Page.html">About Me</a></li>
+                <li><a href="About Me Page.html" id="MainList">About Me</a></li>
             </ul>
         </nav>
         <script type="text/javascript" src="Nav-Bar.js"></script>
@@ -86,29 +89,11 @@
             <header>
             Gallery
             </header>
-            <section>
-              <!-- Slideshow container -->
-                <div class="slideshow-container" align="center">
-
-                  <!-- Full-width images with number and caption text -->
-                  <div class="mySlides fade">
-                    <div class="numbertext">1 / 1</div>
-                    <img src="Level Design Screenshots/Unity Engine/Abandoned TARDIS/Abandoned TARDIS 01.jpg" style="width:60%">
-                  </div>
-                  </div>
-
-                  <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                </div>
-                <script type="text/javascript" src="Image-Gallery.js"></script>
-                </section>
+            <section class="gallery">
+                <p align="centre">
+                <img src="Level Design Screenshots/Unity Engine/Abandoned TARDIS/Abandoned TARDIS 01.jpg" alt="#" class="Image">
+                </p>
+            </section>
             <header>
                 Original Instagram Post
             </header>
@@ -126,8 +111,8 @@
             <header>
                 Follow Me on Social Media Below....
             </header>
-            <a href="#" target="_blank" class="fa fa-facebook" id="facebook"></a>
-            <a href="#" target="_blank" class="fa fa-twitter" id="twitter"></a>
+            <a href="https://fb.me/PardoeGamesDesigns" target="_blank" class="fa fa-facebook" id="facebook"></a>
+            <a href="https://twitter.com/DanielPardoe3" target="_blank" class="fa fa-twitter" id="twitter"></a>
             <a href="https://www.linkedin.com/in/daniel-pardoe-904349122" target="_blank" class="fa fa-linkedin" id="linkedin"></a>
             <a href="https://www.youtube.com/channel/UCSOFIz7f9fho7NE-fSFwaUw" target="_blank" class="fa fa-youtube" id="youtube"></a>
             <a href="https://www.instagram.com/pardoenator/" target="_blank" class="fa fa-instagram" id="instagram"></a>
