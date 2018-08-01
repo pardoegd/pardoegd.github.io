@@ -17,6 +17,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Responsive Drop-down Navigation</title>
+      <link rel="icon" href="Main Page Images/Short Logo.png">
       <link rel="stylesheet" href="Main CSS NEW.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -24,7 +25,25 @@
   </head>
 
     <body>
+        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     
+        <script>
+        var channelID = "UCSOFIz7f9fho7NE-fSFwaUw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+});
+        </script>
+        
        <nav>
             <div>
                 <i class="fa fa-bars"></i>
@@ -81,13 +100,25 @@
             <header>
                 Latest YouTube Video!!
             </header>
-            <p>
-                Below is the latest Level Design Showcase Video, this was a combination of all of the seperate Levels/Scenes that I made using the Unity Engine in the later half of 2017. These were created using a mixture of 3D Studio Max for the model creation and Unity 2017 Personal for the overall game creation. The assets that were not made by me came from the Unity Asset Store and the textures mostly came from a mixture of Textures.com, Pinterest, Arroway-Textures and Dev-Assets.
-            </p>
             <p align="centre">
-            <iframe src="https://www.youtube.com/embed/AVGiNmU5VhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
             </p>
-        
+            <header>
+                FaceBook Page!!
+            </header>
+                <p align="centre" class="fb-page" data-href="https://www.facebook.com/PardoeGamesDesigns/" data-tabs="timeline" data-width="500" data-height="1000" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PardoeGamesDesigns/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PardoeGamesDesigns/">Pardoe Games Designs</a></blockquote></p>
+            <header>
+                Latest Instagram Post!!
+            </header>
+            <p align="centre">                
+                <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/2ab7922f37cc5fc69e8d260d25c31c55.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:50%;border:0;overflow:hidden;"></iframe>
+            </p>
+            <header>
+                Twitter Page!!
+            </header>
+            <p align="centre">
+                <a class="twitter-timeline" data-width="800" data-height="600" data-theme="dark" href="https://twitter.com/DanielPardoe3?ref_src=twsrc%5Etfw">Tweets by DanielPardoe3</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
         </section>
         <section class="footer">
             <p align="centre">
