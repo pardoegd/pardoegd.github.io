@@ -14,7 +14,7 @@ ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      background: #286DA8;
+      background: rgba(40, 109, 168, 0.70);
       position: relative;
       text-align: center;
       /*overflow: hidden;
@@ -35,7 +35,7 @@ ul li a {
 }
 
 .active {
-    background: #002e7f;  
+    background: rgba(0, 46, 127, 0.5);  
 }
 
 ul li:hover {
@@ -82,7 +82,7 @@ nav div {
       ul {
             display: none;
             position: static;
-            background: #286DA8;
+            background: rgba(40, 109, 168, 0.70);
       }
 
       ul li {
