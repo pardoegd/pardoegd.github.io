@@ -35,11 +35,11 @@ ul li a {
 }
 
 .active {
-    background: rgba(0, 46, 127, 0.5);  
+    background: rgba(0, 46, 127, 0.70);  
 }
 
 ul li:hover {
-      background-color: #3d9eed;
+      background-color: rgba(61, 158, 237, 0.70);
 }
 
 ul ul {
@@ -50,7 +50,7 @@ ul ul {
 }
 ul ul li {
       display: block;
-      background: #285ba8;
+      background: rgba(40, 91, 168, 0.70);
 }
 
 ul li:hover ul {
@@ -64,7 +64,7 @@ ul li i {
 }
 
 nav div {
-      background: #286DA8;
+      background: rgba(40, 109, 168, 0.70);
       color: white;
       font-size: 24px;
       padding: 0.6em;
@@ -91,7 +91,7 @@ nav div {
 
       ul ul {
             position: static;
-            background: #286DA8;
+            background: rgba(40, 109, 168, 0.7);
       }
     
     section.content {
