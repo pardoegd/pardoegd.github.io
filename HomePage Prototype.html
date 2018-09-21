@@ -18,10 +18,10 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Responsive Drop-down Navigation</title>
       <link rel="icon" href="Main Page Images/Short Logo.png">
-      <link rel="stylesheet" href="Main CSS NEW.css">
+      <link rel="stylesheet" href="Main CSS Prototype.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>             <script type="text/javascript" src="Nav-Bar_VER2.0.js"></script>
   </head>
 
     <body>
@@ -44,51 +44,39 @@ $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtub
 });
         </script>
         
-       <nav>
-            <div>
-                <i class="fa fa-bars"></i>
+    <header class="bg-image">
+        <div class="bw-gradient"></div>
+        <div class="header">
+            <div class="sub-header">
+                <div class="bars">
+                    <i class="fa fa-bars" onclick="openNav()"></i>
+                </div>
+                    <ul class="left-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Level Designs</a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="#">Pardoe Games Designs</a>
+                        </div>
+                        <ul class="right-menu">
+                            <li><a href="#">Other Random Projects</a></li>
+                            <li><a href="#">About Me</a></li>
+                        </ul>
             </div>
-            
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#" id="slide1">Unity Level Designs <i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li><a href="ULD01 - Abandoned TARDIS.html">Abandoned TARDIS</a></li>
-                        <li><a href="ULD02 - Abandoned Stargate.html">Abandoned Stargate</a></li>
-                        <li><a href="ULD03 - Garden Design.html">Garden Design</a></li>
-                        <li><a href="ULD04 - Autumn Sunset.html">Autumn Sunset</a></li>
-                        <li><a href="ULD05 - Halloween Special.html">Halloween Special</a></li>
-                        <li><a href="ULD06 - Foggy Morning.html">Foggy Morning</a></li>
-                        <li><a href="ULD07 - Forest River.html">Forest River</a></li>
-                        <li><a href="ULD08 - Summer Beach.html">Summer Beach</a></li>
-                        <li><a href="ULD09 - Full Building Level.html">Upcoming Project/Game</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="slide2">Unreal Level Designs <i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li><a href="UE4LD01 - Camping Site.html">Forest Camping Site</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="slide3">Cryengine Level Designs <i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li><a href="">COMING SOON!!</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" id="slide4">Other Random Projects <i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li><a href="ORP01 - Planet Protector.html">Planet Protector(XNA)</a></li>
-                        <li><a href="ORP02 - Abandoned House.html">Abandoned House (3DS Max)</a></li>
-                        <li><a href="ORP03 - LEGO Mindstorm.html">LEGO Mindstorm Robots</a></li>
-                        <li><a href="ORP04 - The Conspiracy.html">The Conspiracy (Prototype Unity Level)</a></li>
-                        <li><a href="ORP05 - Quiz Game.html">C++ Quiz Game</a></li>
-                    </ul>
-                </li>
-                <li><a href="About Me Page.html">About Me</a></li>
-            </ul>
-        </nav>
-        <script type="text/javascript" src="Nav-Bar.js"></script>
+        </div>
+    </header>
         
-        <section class="sec1"></section>
+        <section id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Level Designs</a>
+            <a href="#">Other Random Projects</a>
+            <a href="#">About Me</a>        
+        </section>
+
+        <!--<script type="text/javascript" src="Nav-Bar_VER2.0.js"></script>-->
+        
+        <!--<section class="sec1"></section>-->
         
         <section class="content">
             
@@ -134,8 +122,5 @@ $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtub
             <a href="https://www.youtube.com/channel/UCSOFIz7f9fho7NE-fSFwaUw" target="_blank" class="fa fa-youtube" id="youtube"></a>
             <a href="https://www.instagram.com/pardoenator/" target="_blank" class="fa fa-instagram" id="instagram"></a>
             <a href="https://www.flickr.com/photos/147060887@N03/albums" target="_blank" class="fa fa-flickr" id="flickr"></a>
-            <header>
-                <a href="HomePage Prototype.html">New Beta Site, COMING SOON!!</a>
-            </header>
         </section>
     </body>
