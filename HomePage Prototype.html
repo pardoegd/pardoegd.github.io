@@ -44,6 +44,26 @@
             });
         </script>
         
+        <script>
+            $(document).ready(function(){
+            $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $(".sub-header").addClass('active');
+            }else{
+                $(".sub-header").removeClass('active');
+            }
+        });
+        });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
     <header class="bg-image">
         <div class="bw-gradient"></div>
         <div class="header">
@@ -122,7 +142,5 @@
             <a href="https://www.youtube.com/channel/UCSOFIz7f9fho7NE-fSFwaUw" target="_blank" class="fa fa-youtube" id="youtube"></a>
             <a href="https://www.instagram.com/pardoenator/" target="_blank" class="fa fa-instagram" id="instagram"></a>
             <a href="https://www.flickr.com/photos/147060887@N03/albums" target="_blank" class="fa fa-flickr" id="flickr"></a>
-        </section>
-    
-            <script src="/Nav-Bar_VER2.0.js"></script>
+    </section>
     </body>
