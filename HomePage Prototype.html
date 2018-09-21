@@ -22,27 +22,47 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="Nav-Bar_VER2.0.js"></script>
+      <!--<script type="text/javascript" src="Nav-Bar_VER2.0.js"></script>-->
   </head>
 
     <body>
         
         <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     
         <script>
-        var channelID = "UCSOFIz7f9fho7NE-fSFwaUw";
-$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
-   var link = data.items[0].link;
-   var id = link.substr(link.indexOf("=")+1);
-    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
-});
+            var channelID = "UCSOFIz7f9fho7NE-fSFwaUw";
+            $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+               var link = data.items[0].link;
+               var id = link.substr(link.indexOf("=")+1);
+                $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+            });
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+            $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+            $(".sub-header").addClass('active');
+            }else{
+            $(".sub-header").removeClass('active');
+                }
+                });
+            });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
         </script>
         
     <header class="bg-image">
