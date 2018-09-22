@@ -12,6 +12,14 @@ body {
     height: 100vh;
     background-attachment: fixed;
 }
+.bg-image2{
+    background: url("Main Page Images/Website Header Image NEWER.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-attachment: fixed;
+}
 .bw-gradient{
     width: 100%;
     height: 15vh;
