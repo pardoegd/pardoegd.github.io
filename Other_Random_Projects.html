@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    
+      <meta charset="UTF-8">
+    
+      <meta name="keywords" content="Pardoe Games Designs, Unity Engine, Unreal Engine, PC, Games, Gameplay, Videos, Screenshots">
+    
+      <meta name="description" content="This is a site that will show all of my Level/Scene Designs that I have done using Unity, Unreal or even possibly CryEngine. And other random Programming Projects that I might pursue.">
+    								  
+    
+      <meta name="author" content="Daniel Pardoe">
+    
+      <title>Pardoe Games Designs Main Sites - Home</title>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Drop-down Navigation</title>
+      <link rel="icon" href="Main Page Images/PGD Short Logo Youtube Ver.png">
+      <link rel="stylesheet" href="Main CSS Prototype.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+    <body>
+        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
+        <script>
+            var channelID = "UCSOFIz7f9fho7NE-fSFwaUw";
+            $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+               var link = data.items[0].link;
+               var id = link.substr(link.indexOf("=")+1);
+                $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+            });
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+            $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $(".sub-header").addClass('active');
+            }else{
+                $(".sub-header").removeClass('active');
+            }
+        });
+        });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+    <header class="bg-image2">
+        <div class="bw-gradient"></div>
+        <div class="header">
+            <div class="sub-header">
+                <div class="bars">
+                    <i class="fa fa-bars" onclick="openNav()"></i>
+                </div>
+                    <ul class="left-menu">
+                            <li><a href="Ongoing_Project.html">Ongoing Project</a></li>
+                            <li><a href="Level_Designs.html">Level Designs</a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="index.html">Pardoe Games Designs</a>
+                        </div>
+                        <ul class="right-menu">
+                            <li><a href="Other_Random_Projects.html">Other Random Projects</a></li>
+                            <li><a href="About_Me.html">About Me</a></li>
+                        </ul>
+            </div>
+        </div>
+    </header>
+        
+        <section id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="Ongoing_Project.html">Ongoing Project</a>
+            <a href="Level_Designs.html">Level Designs</a>
+            <a href="Other_Random_Projects.html">Other Random Projects</a>
+            <a href="About_Me.html">About Me</a>        
+        </section>
+
+        <!--<script type="text/javascript" src="Nav-Bar_VER2.0.js"></script>-->
+        
+        <!--<section class="sec1"></section>-->
+        
+        <section class="content">
+            
+            <header>
+                Other Random Projects
+            </header>
+            
+            <p>
+                Welcome to my Random Projects page, this is a page where all of my other Development projects will live, these are mostly projects that I have done as part of my College Courses that I have enrolled on. However, there are some other games that I have developed included in the list, as I have enrolled onto IT and Software/Games Dev Courses in the past. So feel free to gander through this page to see more of my experience within this IT Field.  
+            </p>
+            
+            <header>
+                Planet Protector
+            </header>
+            
+            <p>
+                This game was made using Visual Studio 2015, C# and XNA, it was made as part as my first year of my course, Level 3 Extended Diploma in IT, since I enrolled on the Software Design and Development side of this course. This was the final project towards Unit 16 Procedural Programming, however, I did use OOP to create this game. The overall aim of the game is to stop the asteroids from hitting the Earth, or the bottom of the screen, this is done by the ship shooting lasers at the asteroids. However, if you get hit by the asteroid the ship will lose some health, let the health go down to zero and your ship will be no more, and you would have lost the game. Hitting the Asteroids gives you more of a score value or XP, so you can take it in turns to compete with your friends. However, I do have to say the game can be quite glitchy to play and is not as good as it could have been, for example, the collisions can sometimes not be detected correctly or even not detected at all, meaning it can appear that either the Asteroid or the Laser missed each other, or if the Asteroid missed the ship. However, I did still achieve a Distinction for this Unit and it is something that I have grown a lot on since I first started out.
+            </p>
+            
+            <div class="container">
+            <h2>Screenshots</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+            <div class="item active">
+            <img src="Other Random Projects Screenshots/Planet Protector Screenshots/Test 1.PNG" alt="Planet Protector 01" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Planet Protector Screenshots/Test 3.PNG" alt="Planet Protector 02" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Planet Protector Screenshots/Test 8B.PNG" alt="Planet Protector 03" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Planet Protector Screenshots/Test 10B.PNG" alt="Planet Protector 04" style="width:100%;">
+            </div>
+            
+
+                </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            </div>
+            
+            <br>
+            
+            <h2>YouTube Showcase Video</h2>
+                <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/UEfyVGDq5fw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            </section>
+            
+            <br>
+            <br>
+            
+            <header>
+                Abandoned House 3D Model
+            </header>
+            
+            <p>
+                This was made using 3D Studio Max and was done as part of my final portfolio for my Level 3 Extended Diploma qualification, this was for Unit 41 - 3D Modelling. For this unit we had to create a house and have a camera animate through the separate rooms with related models. This was something that I really enjoyed doing and tried to make the overall house look like it was abandoned. However, the final animation was not that great, down to the fact that I had used separate cameras to animate through the separate parts of the house and I also had to turn off most of the lights in the scene, as it was going to take too long to render otherwise. However, this being said I did gain a Distinction on this Unit and have grown a lot of my skills since then.
+            </p>
+            
+            <div class="container">
+            <h2>Screenshots</h2>
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+            <li data-target="#myCarousel1" data-slide-to="3"></li>
+            <li data-target="#myCarousel1" data-slide-to="4"></li>
+            <li data-target="#myCarousel1" data-slide-to="5"></li>
+            <li data-target="#myCarousel1" data-slide-to="6"></li>
+            <li data-target="#myCarousel1" data-slide-to="7"></li>
+            <li data-target="#myCarousel1" data-slide-to="8"></li>
+            <li data-target="#myCarousel1" data-slide-to="9"></li>
+            <li data-target="#myCarousel1" data-slide-to="10"></li>
+            <li data-target="#myCarousel1" data-slide-to="11"></li>
+            <li data-target="#myCarousel1" data-slide-to="12"></li>
+            <li data-target="#myCarousel1" data-slide-to="13"></li>
+            <li data-target="#myCarousel1" data-slide-to="14"></li>
+            <li data-target="#myCarousel1" data-slide-to="15"></li>
+            <li data-target="#myCarousel1" data-slide-to="16"></li>
+                </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+            <div class="item active">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Pic01.jpg" alt="Abandoned House 01" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Pic02.jpg" alt="Abandoned House 02" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Front Deck Banister Final.jpg" alt="Abandoned House 03" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Back Deck Banister Final.jpg" alt="Abandoned House 04" style="width:100%;">
+            </div>
+            
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Kitchen Final.jpg" alt="Abandoned House 05" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Hob Final.jpg" alt="Abandoned House 06" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Oven Final.jpg" alt="Abandoned House 07" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Sink and Tap Final.jpg" alt="Abandoned House 08" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Bath Final.jpg" alt="Abandoned House 09" style="width:100%;">
+            </div>
+        
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Show Final.jpg" alt="Abandoned House 10" style="width:100%;">
+            </div>
+            
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Bed Final.jpg" alt="Abandoned House 11" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Single Bed Final.jpg" alt="Abandoned House 12" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Desktop Setup Final.jpg" alt="Abandoned House 13" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Landing Banister Final.jpg" alt="Abandoned House 14" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Basement Final.PNG" alt="Abandoned House 15" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/Ground Floor Final.PNG" alt="Abandoned House 16" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/Abandoned House Screenshots/First Floor Final.PNG" alt="Abandoned House 17" style="width:100%;">
+            </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            </div>
+            
+            <br>
+            
+            <h2>
+                YouTube Showcase Video
+            </h2>
+
+            <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/tSVzj86UzEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            <br>
+            <br>
+            
+            <header>
+                LEGO Mindstorm Robots
+            </header>
+            
+            <p>
+                These robots were made as part of the second year of the Level 3 Extended Diploma in IT. The overall target of this unit (Unit 24 - Controlling Systems using IT), was to create two robots using the LEGO Mindstorm NXT Kits, so my team decided to create a robot that can cross a 15cm gap and another robot that can detect and avoid obstacles in its path.
+            </p>
+            
+            <br>
+            
+            <header>
+                Robot 1 - 15CM Gap Crosser    
+            </header>
+                
+            <p>
+                This robot was designed and created by me and my friend, Luke Newell, the overall purpose of this robot was it had to be able to cross a 15CM Gap. We did this by having the robot drop a bridge at our command, which then allowed the robot to cross over the gap without any trouble. However, this was not an automatic system and there is no way for the robot to re-pick the bridge back up and put it back on the conveyor.    
+            </p>
+                
+                
+            <div class="container">
+            <h2>Screenshots</h2>
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+            <li data-target="#myCarousel2" data-slide-to="3"></li>
+                </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+            <div class="item active">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 1 - Bridge Crosser/IMG_0876.JPG" alt="Robot 1 - 01" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 1 - Bridge Crosser/IMG_0915.JPG" alt="Robot 1 - 02" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 1 - Bridge Crosser/IMG_0916.JPG" alt="Robot 1 - 03" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 1 - Bridge Crosser/IMG_0917.JPG" alt="Robot 1 - 04" style="width:100%;">
+            </div>
+            
+
+                </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            </div>
+                
+            <br>
+            
+            <h2>
+            YouTube Showcase Video    
+            </h2>
+                
+            <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/u3pXlDhB_TQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            </section>
+            
+            <header>
+                Robot 2 - Object Detection    
+            </header>
+                
+            <p>
+                This is the second robot that I had to create for this unit, again it was designed by me and my friend, Luke Newell, and the overall purpose of this robot was to perform a command as soon as it detected something in front of its path. The command that we told it to run as soon as it detected something was to turn to the right, this would then allow the robot to continue forwards, just on an altered path.    
+            </p>
+                
+                        <div class="container">
+            <h2>Screenshots</h2>
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li>
+            <li data-target="#myCarousel3" data-slide-to="2"></li>
+            <li data-target="#myCarousel3" data-slide-to="3"></li>
+            <li data-target="#myCarousel3" data-slide-to="4"></li>
+                </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+            <div class="item active">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 2 - Object Detection/IMG01.jpg" alt="Robot 2 - 01" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 2 - Object Detection/IMG02.jpg" alt="Robot 2 - 02" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 2 - Object Detection/IMG03.jpg" alt="Robot 3 - 03" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 2 - Object Detection/IMG04.jpg" alt="Robot 2 - 04" style="width:100%;">
+            </div>
+            
+            <div class="item">
+            <img src="Other Random Projects Screenshots/LEGO Mindstorm/Robot 2 - Object Detection/IMG05.jpg" alt="Robot 2 - 05" style="width:100%;">
+            </div>
+            
+
+                </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            </div>
+                
+            <h2>
+                YouTube Showcase Video
+            </h2>
+            
+            <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/iABB_x7F8K8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            </section>
+            
+            <br>
+            <br>
+            
+            <header>
+                The Conspiracy (Prototype Unity Level)    
+            </header>
+                
+            <p>
+                 This was made using 3D Studio Max and Unity 5.6 Personal and was done as part of my final portfolio for my Level 3 Extended Diploma qualification, this was two units, Unit 22 - Developing Computer Games and Unit 15 - Object Oriented Programming. For this I created the foundation for a Apocalyptic Game, including a small portion of the map that was designed for the game. The map was an abandoned version of a real-life location, so most of the models were still made by me, however, not designed by me personally. Since creating this map I have come a long way in my understanding of the separate parts of the Engine along with how I design and create my Level Designs and have increased significantly in the amount of detail I put into the Levels and Scenes.   
+            </p>
+                
+            <div class="container">
+            <h2>Screenshots</h2>
+            <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel4" data-slide-to="1"></li>
+            <li data-target="#myCarousel4" data-slide-to="2"></li>
+            <li data-target="#myCarousel4" data-slide-to="3"></li>
+            <li data-target="#myCarousel4" data-slide-to="4"></li>
+                </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+            <div class="item active">
+            <img src="Other Random Projects Screenshots/The Conspiracy Screenshots/001 - Open Door Part 1.PNG" alt="The Conspiracy 01" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/The Conspiracy Screenshots/002 - Open Door Part 2.PNG" alt="The Conspiracy - 02" style="width:100%;">
+            </div>
+
+            <div class="item">
+            <img src="Other Random Projects Screenshots/The Conspiracy Screenshots/003 - Open Door Part 3.PNG" alt="The Conspiracy - 03" style="width:100%;">
+            </div>
+                
+            <div class="item">
+            <img src="Other Random Projects Screenshots/The Conspiracy Screenshots/009 - AI Follow Player Part 1.PNG" alt="The Conspiracy - 04" style="width:100%;">
+            </div>
+            
+            <div class="item">
+            <img src="Other Random Projects Screenshots/The Conspiracy Screenshots/012 - Destroyable Object.PNG" alt="The Conspiracy - 05" style="width:100%;">
+            </div>
+            
+
+                </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            </div>
+                
+            <h2>
+                YouTube Video Showcase - Showcase
+            </h2>
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/xMViphRP8t4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            <h2>
+            YouTube Video Showcase - Gameplay
+            </h2>
+            <section class="gallery">
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/zAdnFrxuF1Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            </section>
+                
+                <br>
+                <br>
+            
+            <header>
+                C++ Quiz Game
+            </header>
+                
+            <p>
+                This was made using Visual Studio 2017 and C++, this is a basic command line game that I created as part of my HNC Course, for Unit 1 - Programming, in which I achieved a Distinction. All this is, is a simple command line game, that prints the contents of the corresponding text file out onto the screen, you user will then be able to answer the question and the program will tell them if the answer is correct or not, with some more information about question after this has been shown. The questions that were asked were related to Computer Systems Architecture, that do get more difficult as you progress through the game.    
+            </p>
+                
+            <h2>
+                YouTube Showcase Video
+            </h2>
+                <p align="centre">
+                    <iframe src="https://www.youtube.com/embed/wtfvuaCFmn8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </p>
+            
+        </section>
+    <section class="footer">
+            <p align="centre">
+             <img src="Main Page Images/PGD Short Logo Web Ver.png" alt="Pardoe Games Designs Logo">
+            </p>
+            <header>
+                Follow Me on Social Media Below....
+            </header>
+            <a href="https://fb.me/PardoeGamesDesigns" target="_blank" class="fa fa-facebook" id="facebook"></a>
+            <a href="https://twitter.com/DanielPardoe3" target="_blank" class="fa fa-twitter" id="twitter"></a>
+            <a href="https://www.linkedin.com/in/daniel-pardoe-904349122" target="_blank" class="fa fa-linkedin" id="linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCSOFIz7f9fho7NE-fSFwaUw" target="_blank" class="fa fa-youtube" id="youtube"></a>
+            <a href="https://www.instagram.com/pardoenator/" target="_blank" class="fa fa-instagram" id="instagram"></a>
+            <a href="https://www.flickr.com/photos/147060887@N03/albums" target="_blank" class="fa fa-flickr" id="flickr"></a>
+    </section>
+    </body>
